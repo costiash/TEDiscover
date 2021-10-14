@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/navigation_feed">
+
+    <fragment
+        android:id="@+id/navigation_feed"
+        android:name="com.example.tediscover.ui.feed.fragments.MainFeed"
+        android:label="@string/feed"
+        android:textAppearance="@style/TextAppearance.MdcTypographyStyles.Headline6"
+        tools:layout="@layout/fragment_main_feed">
+        <action
+            android:id="@+id/action_navigation_feed_to_videoDetailFragment"
+            app:destination="@id/videoDetailFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/navigation_profile"
+        android:name="com.example.tediscover.ui.profile.fragments.Profile"
+        android:label=""
+        android:textAppearance="@style/TextAppearance.MdcTypographyStyles.Headline6"
+        tools:layout="@layout/fragment_profile" >
+        <action
+            android:id="@+id/action_navigation_profile_to_videoDetailFragment"
+            app:destination="@id/videoDetailFragment" />
+        <action
+            android:id="@+id/action_navigation_profile_to_playlistListFragment"
+            app:destination="@id/playlistListFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/videoDetailFragment"
+        android:name="com.example.tediscover.ui.feed.fragments.VideoDetailFragment"
+        android:label="">
+        <argument
+            android:name="tedItem"
+            app:argType="com.example.tediscover.ui.models.EventItem"
+            app:nullable="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/navigation_discoverFragment"
+        android:name="com.example.tediscover.ui.discover.fragments.DiscoverFragment"
+        android:label="@string/discover"
+        android:textAppearance="@style/TextAppearance.MdcTypographyStyles.Headline6"
+        tools:layout="@layout/fragment_discover">
+        <argument
+            android:name="searchQuery"
+            app:argType="string"
+            app:nullable="true" />
+        <action
+            android:id="@+id/action_navigation_discoverFragment_to_discoverFeedFragment"
+            app:destination="@id/discoverFeedFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/discoverFeedFragment"
+        android:name="com.example.tediscover.ui.discover.fragments.DiscoverFeedFragment"
+        android:label="Discovery Results"
+        tools:layout="@layout/fragment_discover_feed">
+        <argument
+            android:name="searchItem"
+            app:argType="com.example.tediscover.ui.models.SearchQuery"
+            app:nullable="true" />
+        <action
+            android:id="@+id/action_discoverFeedFragment_to_videoDetailFragment"
+            app:destination="@id/videoDetailFragment" />
+    </fragment>
+    <action
+        android:id="@+id/action_nav_graph_pop2"
+        app:popUpTo="@id/nav_graph"
+        app:popUpToInclusive="true"
+        app:launchSingleTop="true" />
+    <fragment
+        android:id="@+id/playlistListFragment"
+        android:name="com.example.tediscover.ui.profile.fragments.PlaylistListFragment"
+        android:label="" >
+        <action
+            android:id="@+id/action_playlistListFragment_to_videoDetailFragment"
+            app:destination="@id/videoDetailFragment" />
+    </fragment>
+</navigation>

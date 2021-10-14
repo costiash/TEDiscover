@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/navigation_feed"
+        android:icon="@drawable/ic_feed"
+        android:title="@string/feed" />
+
+    <item
+        android:id="@+id/navigation_discoverFragment"
+        android:icon="@drawable/ic_discover"
+        android:title="@string/discover" />
+
+<!--    <item-->
+<!--        android:id="@+id/navigation_recommended"-->
+<!--        android:icon="@drawable/ic_thumb"-->
+<!--        android:title="@string/recommended" />-->
+
+    <item
+        android:id="@+id/navigation_profile"
+        android:icon="@drawable/ic_person"
+        android:title="@string/profile" />
+
+
+    <item
+        android:id="@+id/action_logout"
+        android:icon="@drawable/ic_logout"
+        android:title="@string/logout"/>
+
+</menu>

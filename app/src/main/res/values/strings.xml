@@ -1,0 +1,62 @@
+<resources>
+    <string name="app_name">TEDiscover</string>
+    <string name="sign_in">Sign In</string>
+    <string name="sign_up">Sign Up</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_liked_fragment">Hello Liked fragment</string>
+    <string name="feed">Main Feed</string>
+    <string name="discover">Discover</string>
+    <string name="recommended">Recommended</string>
+    <string name="profile">Profile</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_history_fragment">Hello History fragment</string>
+    <string name="hello_playlist_fragment">Hello Playlist fragment</string>
+    <string name="fake_title">german santillan a taste of mexicos ancient chocolate making tradition</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_discover_fragment">Hello Discover fragment</string>
+    <string name="todo">TODO</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="duration">Duration</string>
+    <string name="topics">Topics</string>
+    <string name="sort_by">Sort By</string>
+    <string name="minutes_6">0-6 minutes</string>
+    <string name="minutes_12">6-12 minutes</string>
+    <string name="minutes_18">12-18 minutes</string>
+    <string name="minutes_long">18+ minutes</string>
+    <string name="topic_technology">Technology</string>
+    <string name="topic_entertainment">Entertainment</string>
+    <string name="topic_design">Design</string>
+    <string name="topic_business">Business</string>
+    <string name="topic_science">Science</string>
+    <string name="topic_global_issues">Global issues</string>
+    <string name="most_viewed">Most viewed</string>
+    <string name="oldest">Oldest</string>
+    <string name="relevance">Relevance</string>
+    <string name="newest">Newest</string>
+    <string name="enter_what_interesting_you">Enter what interesting you</string>
+    <string name="skip">clear all</string>
+    <string name="submit">submit</string>
+    <string name="active_filters">Active filters:</string>
+    <string name="filter">Filter</string>
+    <string name="add_filters_to_your_search">Add filters to your search</string>
+    <string name="username">Username</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="register">Register</string>
+    <string name="login">Login</string>
+    <string name="logout">Logout</string>
+    <string name="create_new_playlist">+ create new playlist</string>
+    <string name="default_playlist">Default Playlist</string>
+    <string name="done">Done</string>
+    <string name="seems_like_you_don_t_have_any_playlists_yet">Seems like you don\'t have any playlists yet</string>
+    <string name="dialog_title">New Playlist</string>
+    <string name="item_liked">The video was added to your Likes</string>
+    <string name="item_not_liked">The video was removed from your Likes</string>
+    <string name="added_to_playlist">The video was added to %s playlist</string>
+    <string name="end_of_discovery_results">End of discovery results</string>
+    <string name="remove">Remove</string>
+    <string name="num_of_items">Number of videos: %d</string>
+    <string name="please_make_sure_to_fill_a_valid_email_address">*Please make sure to fill a valid email address.</string>
+    <string name="please_choose_a_password_with_a_length_of_at_least_6_characters">*Please choose a password with a length of at least 6 characters.</string>
+</resources>
