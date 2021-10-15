@@ -9,6 +9,13 @@ TEDiscover is an Android app that allows you to watch TED-talk videos directly f
 <br>such as the Paging 3 library for infinite content scrolling and the Navigation library.
 <br>Furthermore, I attempted to adhere to the Common architectural principles outlined in Google's official Android Developers guides.
 
+# Screenshots
+<img src="https://github.com/costiash/TEDiscover/blob/master/TEDiscover_Screenshots/Screenshot01.jpg?raw=true" alt="Screenshot01" style="width:180px;height:370px;"> <img src="https://github.com/costiash/TEDiscover/blob/master/TEDiscover_Screenshots/Screenshot02.jpg?raw=true" alt="Screenshot02" style="width:180px;height:370px;">
+<img src="https://github.com/costiash/TEDiscover/blob/master/TEDiscover_Screenshots/Screenshot03.jpg?raw=true" alt="Screenshot03" style="width:180px;height:370px;">
+<img src="https://github.com/costiash/TEDiscover/blob/master/TEDiscover_Screenshots/Screenshot04.jpg?raw=true" alt="Screenshot04" style="width:180px;height:370px;">
+
+<img src="https://github.com/costiash/TEDiscover/blob/master/TEDiscover_Screenshots/Screenshot05.jpg?raw=true" alt="Screenshot05" style="width:180px;height:370px;"> <img src="https://github.com/costiash/TEDiscover/blob/master/TEDiscover_Screenshots/Screenshot06.jpg?raw=true" alt="Screenshot06" style="width:180px;height:370px;">
+
 # IMPORTANT NOTES
 First and foremost, this app's purpose is educational!! I do not own any of the TED content and have no intention of using it commercially. 
 I didn't include my 'google-services.json' file because this app uses Firebase. 
