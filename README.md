@@ -9,7 +9,7 @@ TEDiscover is an Android app that allows you to watch TED-talk videos directly f
 <br>such as the Paging 3 library for infinite content scrolling and the Navigation library.
 <br>Furthermore, I attempted to adhere to the Common architectural principles outlined in Google's official Android Developers guides.
 <br>
-<br> You can download an installation apk from <a href="https://drive.google.com/file/d/1b0w-4O4TvnY0R1xZZwjn1GC919r9AfcA/view?usp=sharing">here</a>
+<br> You can download an installation apk from <a href="https://drive.google.com/u/0/uc?export=download&confirm=VbSV&id=1b0w-4O4TvnY0R1xZZwjn1GC919r9AfcA">here</a>
 
 # Screenshots
 <img src="https://github.com/costiash/TEDiscover/blob/master/TEDiscover_Screenshots/Screenshot01.jpg?raw=true" alt="Screenshot01" style="width:180px;height:370px;"> <img src="https://github.com/costiash/TEDiscover/blob/master/TEDiscover_Screenshots/Screenshot02.jpg?raw=true" alt="Screenshot02" style="width:180px;height:370px;">
