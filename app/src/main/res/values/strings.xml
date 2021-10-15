@@ -59,4 +59,5 @@
     <string name="num_of_items">Number of videos: %d</string>
     <string name="please_make_sure_to_fill_a_valid_email_address">*Please make sure to fill a valid email address.</string>
     <string name="please_choose_a_password_with_a_length_of_at_least_6_characters">*Please choose a password with a length of at least 6 characters.</string>
+    <string name="something_went_wrong_please_go_back_and_try_again_n_if_the_problem_continues_try_a_different_video">Something went wrong. Please go back and try again\n If the problem continues, try a different video.</string>
 </resources>

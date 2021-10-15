@@ -68,29 +68,35 @@ class VideoDetailFragment : Fragment() {
         }
 
         viewModel.fetchEvent(item.talkUrl).observe(viewLifecycleOwner, Observer {
-            binding.tagsTextView.text = it.tags.joinToString(", ")
-            binding.descriptionTextView.text = it.description
-            videoUri = it.videoUrl
-            binding.progressLayout.visibility = View.GONE
-            fab.visibility = View.VISIBLE
-            createTalkItem()
-            fab.setOnClickListener {
-                sharedViewModel.addHistoryVideo(talkItem!!)
-                val intent = Intent(requireContext(), VideoActivity::class.java)
-                intent.putExtra("LINK", videoUri)
-                requireContext().startActivity(intent)
-            }
-            liked = sharedViewModel.checkIfLiked(talkItem!!.id)
-            inPlaylist = sharedViewModel.checkIfInPlaylist(talkItem!!)
-            if (liked) {
-                binding.likeBtn.setImageDrawable(ContextCompat
-                    .getDrawable(requireContext(), R.drawable.ic_like_active))
-            }
+            if (it.videoUrl.isBlank()){
+                binding.progressLayout.visibility = View.GONE
+                binding.errorTextView.visibility = View.VISIBLE
+                binding.errorLayout.visibility = View.VISIBLE
+            } else {
+                binding.tagsTextView.text = it.tags.joinToString(", ")
+                binding.descriptionTextView.text = it.description
+                videoUri = it.videoUrl
+                binding.progressLayout.visibility = View.GONE
+                fab.visibility = View.VISIBLE
+                createTalkItem()
+                fab.setOnClickListener {
+                    sharedViewModel.addHistoryVideo(talkItem!!)
+                    val intent = Intent(requireContext(), VideoActivity::class.java)
+                    intent.putExtra("LINK", videoUri)
+                    requireContext().startActivity(intent)
+                }
+                liked = sharedViewModel.checkIfLiked(talkItem!!.id)
+                inPlaylist = sharedViewModel.checkIfInPlaylist(talkItem!!)
+                if (liked) {
+                    binding.likeBtn.setImageDrawable(ContextCompat
+                        .getDrawable(requireContext(), R.drawable.ic_like_active))
+                }
 
-            if (inPlaylist) {
-                playlistName = sharedViewModel.markPlaylistAsChecked(talkItem!!)
-                binding.addToPlaylistBtn.setImageDrawable(ContextCompat
-                    .getDrawable(requireContext(), R.drawable.ic_playlist_add_active))
+                if (inPlaylist) {
+                    playlistName = sharedViewModel.markPlaylistAsChecked(talkItem!!)
+                    binding.addToPlaylistBtn.setImageDrawable(ContextCompat
+                        .getDrawable(requireContext(), R.drawable.ic_playlist_add_active))
+                }
             }
         })
         return binding.root
